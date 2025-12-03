@@ -119,9 +119,10 @@ def solve(grid, shapes, placedShapes):
 
 
 result = solve(game.grid, game.shapes, game.placedShapes)
-# print(result)
+done = game.checkGrid(game.grid)
+
 shapePos, currentShapeIndex, currentColorIndex, grid, placedShapes, done = game.execute('export')
-done = game.checkGrid(grid)
+
 print(shapePos, currentShapeIndex, currentColorIndex, grid, placedShapes, done)
 
 ########################################
